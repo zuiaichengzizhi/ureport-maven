@@ -1,0 +1,14 @@
+spring:
+  profiles:
+    active: py
+
+session:
+  # 会话超时（分）
+  timeout: 30
+  # 会话DPRS阻断最大时间间隔（秒）
+  dprs: 5
+  # 开启OPOS会话模式: none,opos,osos
+  opos: none
+
+# App Version
+version: v1.0.0

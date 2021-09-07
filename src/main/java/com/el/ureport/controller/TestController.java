@@ -20,7 +20,7 @@ public class TestController {
 
     @RequestMapping("student/query")
     public Result query() {
-        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from student");
+        List<Map<String, Object>> maps = jdbcTemplate.queryForList("select * from t_student");
         System.out.println(JSONObject.toJSONString(maps));
         if (maps == null || maps.size() < 1) {
             return ResultGenerator.genSuccessResult("未抓取到数据");

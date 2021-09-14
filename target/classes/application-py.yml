@@ -3,47 +3,14 @@ server:
 
 spring:
   datasource:
-    # mysql
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://192.168.118.182:3306/testdb?characterEncoding=utf8
-#    username: root
-#    password: 111111
-
     # tidb
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://192.168.118.182:4000/tidb?characterEncoding=utf8
-#    username: root
-#    password:
-
-      # tidb
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
-    url: jdbc:sqlserver://localhost:1433;databasename=FCNWMS
-    username: sa
-    password: 111111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql:/172.25.201.147:4000/tidb?characterEncoding=utf8
+    username: root
+    password: d24EWPDj4j
 
   main:
     allow-bean-definition-overriding: true
-
-
-#datasource:
-#  druid:
-#    one:
-#      url: jdbc:mysql://127.0.0.1:3306/test?rewriteBatchedStatements=true&serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=false&allowPublicKeyRetrieval=true
-#      username: root
-#      password: 111111
-#      driverClassName: com.mysql.cj.jdbc.Driver
-#      maxActive: 20
-#      initialSize: 1
-#      maxWait: 60000
-#      minIdle: 1
-#      timeBetweenEvictionRunsMillis: 60000
-#      minEvictableIdleTimeMillis: 300000
-#      validationQuery: select 'x' FROM DUAL
-#      testWhileIdle: true
-#      testOnBorrow: false
-#      testOnReturn: false
-#      poolPreparedStatements: true
-#      maxOpenPreparedStatements: 20
 
 #jdbc
 #  driverClassName: com.mysql.jdbc.Driver

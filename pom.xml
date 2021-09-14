@@ -6,6 +6,7 @@
     <groupId>org.el</groupId>
     <artifactId>ureport-demon</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
@@ -169,6 +170,23 @@
                         </resource>
                     </resources>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 指定该Main Class为全局的唯一入口 -->
+                    <mainClass>com.el.ureport.App</mainClass>
+                    <layout>ZIP</layout>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中-->
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

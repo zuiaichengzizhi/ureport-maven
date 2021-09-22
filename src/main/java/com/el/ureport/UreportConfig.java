@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.SQLException;
-@ImportResource("classpath:ureport-console-context.xml")//不加项目能够启动但是会导致加载数据源报错或加载不了
+@ImportResource("classpath:my-ureport-context.xml")//不加项目能够启动但是会导致加载数据源报错或加载不了
 @Configuration
 @EnableAutoConfiguration
 public class UreportConfig implements BuildinDatasource {
@@ -30,7 +30,7 @@ public class UreportConfig implements BuildinDatasource {
 
     @Override
     public String name() {
-        return "System";
+        return "tidb";
     }
 
     @Override

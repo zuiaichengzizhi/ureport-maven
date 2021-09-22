@@ -5,7 +5,7 @@ spring:
   datasource:
     # tidb
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql:/172.25.201.147:4000/tidb?characterEncoding=utf8
+    url: jdbc:mysql://172.25.201.147:4000/JDEDB?characterEncoding=utf8
     username: root
     password: d24EWPDj4j
 
